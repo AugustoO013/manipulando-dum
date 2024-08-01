@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro de Curriculo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="meufundo">
+	<div class="conteiner">
+		<h1>Formulário em HTML</h1>
+
+<label for="nome">Nome:</label>
+<input type="text" name="nome" id="nome">
+<br>
+<br>
+
+<label for="nasc">Data de Nascimento</label>
+<input type="date" name="nome" id="nasc">
+<br>
+<br>
+
+<label for="cor">Cor</label>
+<input type="color" name="cor" id="cor">
+<br>
+<br>
+
+<label for="dependentes">Dependentes</label>
+<input type="number"  onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" name="dependentes" id="dependentes">
+<br>
+<br>
+
+<label for="email">Email: </label>
+<input type="email" name="email" id="email">
+<br>
+<br>
+
+<label for="civil">Estado Civil</label><br>
+<select name="civil" id="civil">
+<option>Feliz</option>
+<option>Enrolado</option>
+<option>Triste</option>
+</select>
+<br>
+<br>
+
+<label for="endereço">Endereço:</label><br>
+<textarea name="endereço" id="endereço"></textarea>
+<br>
+<br>
+
+<label for="habilidade">Habilidades</label><br>
+<input type="radio" name="habilidade">HTML<br>
+<input type="radio" name="habilidade">CSS<br>
+<input type="radio" name="habilidade">JS<br>
+<input type="radio" name="habilidade">OFFICE<br>
+<br>
+
+<button id="btn">Cadastrar</button>
+</div>
+
+<div id="alvo"></div>
+	<script src="js/acao.js"></script>
+
+
+</body>
+</html>
